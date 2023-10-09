@@ -1,3 +1,3 @@
 # Homework
-https://mmedvedskya.github.io/Homework/typography.html
-https://mmedvedskya.github.io/Homework/number1.html
+https://mmedvedskya.github.io/Homework/hw1/typography.html
+https://mmedvedskya.github.io/Homework/hw2/number1.html
