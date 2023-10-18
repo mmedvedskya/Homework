@@ -1,6 +1,6 @@
 Homework for Web-technologies
 ### https://mmedvedskya.github.io
-theme: minima
+
 #### https://mmedvedskya.github.io/Homework/hw1/typography.html
 #### https://mmedvedskya.github.io/Homework/hw2/030_images/added.html
 #### https://mmedvedskya.github.io/Homework/hw2/040_tables/num1/number1.html
