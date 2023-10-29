@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studio Ghibli</title>
+</head>
+<body>
+
+<table align="center" width="1080px" background="pictures/wall.png">
+    <tr>
+        <td>
+            <p align="center" id="back1"><font face="Franklin Gothic" size="7">Путеводитель по Studio Ghibli</font></p>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table align="center" bgcolor="white" border="1" cellspacing="3" cellpadding="10" width="350">
+                <thead>
+                <tr>
+                    <td>
+                        <h2 align="center">Навигация</h2>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="index.html"><font size="4" color="black"><b>Начальная страница</b></font></a></td>
+                </tr>
+                <tr>
+                    <td><a href="lists.html"><font size="4" color="black">Режиссеры и их фильмы</font></a></td>
+                </tr>
+                <tr>
+                    <td><a href="table.html"><font size="4" color="black">Топ 10 фильмов</font></a></td>
+                </tr>
+                <tr>
+                    <td><a href="characters.html"><font size="4" color="black">Топ 5 персонажей</font></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://ru.wikipedia.org/wiki/Studio_Ghibli" target="_blank">
+                            <font size="4" color="black">О студии</font>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="index.html#quiz">
+                            <font size="4" color="black"><b>Анкета</b></font>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><a href="index.html#quiz"><img src="pictures/arrow1.png" width="40"></a></td>
+                                <td width="240"></td>
+                                <td><a href="lists.html"><img src="pictures/arrow2.png" width="40"></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+
+    <tr>
+        <td>
+            <p align="center"><img src="pictures/pic1.png" alt="Spirited Away" width="250"></p>
+        </td>
+    </tr>
+</table>
+<br>
+
+<!--АНКЕТА-->
+
+<p align="center" id="quiz"><font face="Franklin Gothic" size="5">Анкета о фильмах Studio Ghibli</font></p>
+
+<form id="form" action="https://www.bing.com/" target="_blank" method="get" name="quiz">
+    <p align="right">
+        <input type="reset" value="Очистить">
+    </p>
+
+    <fieldset>
+        <legend>Контактные данные</legend>
+        <ul type="square">
+            <li>
+                <p>
+                    <label for="name"><font face="Franklin Gothic">Имя</font></label>
+                    <br>
+                    <input name="name" id="name" placeholder="Иван">
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <label for="surname"><font face="Franklin Gothic">Фамилия</font></label>
+                    <br>
+                    <input name="surname" id="surname" placeholder="Иванов">
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <label for="phone"><font face="Franklin Gothic">Номер телефона</font></label>
+                    <br>
+                    <input type="tel" name="phone" id="phone" value="+7" maxlength="12" required>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <label for="email"><font face="Franklin Gothic">Адрес эл. почты</font></label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <label for="date"><font face="Franklin Gothic">Дата отправки данных</font></label>
+                    <br>
+                    <input type="date" name="date" id="date">
+                </p>
+            </li>
+
+            <li>
+                <font face="Franklin Gothic">Предпочитаемый способ взаимодействия</font>
+                <br><input type="radio" id="ContactChoice1" name="contact" value="email" checked/>
+                <label for="ContactChoice1">Электронная почта</label>
+                <br><input type="radio" id="ContactChoice2" name="contact" value="phone"/>
+                <label for="ContactChoice2">Телефон</label>
+                <br><input type="radio" id="ContactChoice3" name="contact" value="messenger"/>
+                <label for="ContactChoice3">Мессенджер</label>
+                <br><input type="radio" id="ContactChoice4" name="contact" value="socials"/>
+                <label for="ContactChoice4">Социальные сети</label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+        <legend>Анкета</legend>
+
+        <p>
+            <label>Нравятся ли вам фильмы Studio Ghibli?
+                <br><input type="radio" id="yes" name="like" checked/>
+                <label for="yes">Да</label>
+
+                <br><input type="radio" id="no" name="like"/>
+                <label for="no">Нет</label>
+            </label>
+        </p>
+
+        <p>
+            <label>Как много фильмов Studio Ghibli вы смотрели? &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" name="number_of_movies" min="0" value="0">
+            </label>
+        </p>
+
+        <p>
+            <label>Какие из перечисленных персонажей вам больше всего нравятся?
+                <br><input type="checkbox" id="char1" name="characters" value="Totoro" checked>
+                <label for="char1">Тоторо</label>
+                <br><input type="checkbox" id="char2" name="characters" value="Chihiro">
+                <label for="char2">Тихиро Огино</label>
+                <br><input type="checkbox" id="char3" name="characters" value="NoFace">
+                <label for="char3">Безликий</label>
+                <br><input type="checkbox" id="char4" name="characters" value="Princess Mononoke">
+                <label for="char4">Сан (Принцесса Мононоке)</label>
+                <br><input type="checkbox" id="char5" name="characters" value="Howl">
+                <label for="char5">Хаул</label>
+            </label>
+        </p>
+
+        <p>
+            <label>Фильмы какого режиссера вы предпочитаете? &nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="fav_producer" id="fav_producer">
+                    <option>Хаяо Миядзаки</option>
+                    <option>Хироюки Морита</option>
+                    <option>Хиромаса Ёнэбаяси</option>
+                    <option>Томоми Мотидзуки</option>
+                    <option>Михаэль Дюдок де Вит</option>
+                    <option>Исао Такахата</option>
+                    <option>Ёсифуми Кондо</option>
+                    <option>Горо Миядзаки</option>
+                </select>
+            </label>
+        </p>
+
+        <p><label>Какой из представленных фильмов по вашему мнению является лучшим?
+            <br><input type="radio" id="film1" name="films" checked/>
+            <label for="film1">«Унесенные призраками»</label>
+
+            <br><input type="radio" id="film2" name="films"/>
+            <label for="film2">«Мой сосед Тоторо»</label>
+
+            <br><input type="radio" id="film3" name="films"/>
+            <label for="film3">«Небесный замок Лапута»</label>
+
+            <br><input type="radio" id="film4" name="films"/>
+            <label for="film4">«Ведьмина служба доставки»</label>
+
+            <br><input type="radio" id="film5" name="films"/>
+            <label for="film5">«Шепот сердца»</label>
+
+            <br><input type="radio" id="film6" name="films"/>
+            <label for="film6">«Принцесса Мононоке»</label>
+
+            <br><input type="radio" id="film7" name="films"/>
+            <label for="film7">«Ходячий замок»</label>
+
+            <br><input type="radio" id="film8" name="films"/>
+            <label for="film8">«Рыбка Поньо на утесе»</label>
+
+            <br><input type="radio" id="film9" name="films"/>
+            <label for="film9">«Со склонов Кокурико»</label>
+
+            <br><input type="radio" id="film10" name="films"/>
+            <label for="film10">«Ветер крепчает»</label>
+        </label>
+        </p>
+
+        <p>
+            <label for="fav_film">Какой ваш любимый фильм студии? &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="fav_film" id="fav_film">
+            </label>
+        </p>
+
+        <p>
+            <label>Почему именно он кажется вам наиболее привлекательным? &nbsp;&nbsp;&nbsp;&nbsp;
+                <br><textarea placeholder=""></textarea>
+            </label>
+        </p>
+
+         <p>
+            <label for="worst_film">Есть ли фильм, от которого вы не в восторге? (это будет нашим секретом:) &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" name="worst_film" id="worst_film">
+            </label>
+        </p>
+
+
+        <input type="hidden" name="country" value="РФ">
+    </fieldset>
+
+    <p align="center"><input type="submit" value="Отправить"></p>
+</form>
+<a href="#back1"><img src="pictures/arrow3.png" width="30"></a>
+<p align="right"><a href="lists.html">вперед></a></p>
+</body>
+</html>
