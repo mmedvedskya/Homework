@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+</head>
+
+<body>
+<p>
+    Даны вещественные числа X и Y. Вычислить Z.
+    Z = XY при X > Y, Z = ln(X + Y) в противном случае.
+</p>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <ul type="circle">
+        <li>для поисковика: <input name="q" value="search"></li>
+        <li>задача: <input name="formulation" value="Вычислить Z"></li>
+        <li>X: <input id="x" name="x" type="number" value="1" step="0.1"></li>
+        <li>Y: <input id="y" name="y" type="number" value="1" step="0.1"></li>
+        <li>Z: <input name="result_z" value="не определено" readonly></li>
+    </ul>
+    <input id="verify" type="button" value="Решить">
+    <input id="send" type="button" value="Отправить">
+</form>
+<p>Ответ: <span id="result"></span></p>
+
+<script src="form.js"></script>
+</body>
+</html>
