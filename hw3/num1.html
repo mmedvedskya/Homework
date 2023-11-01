@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница эл. магазина</title>
+</head>
+<body>
+<form action="https://www.bing.com/" id="form" name="form" method="get" target="_blank">
+    <p align="right">
+        <input type="reset" value="Очистить">
+    </p>
+    <h3 align="center">Регистрация нового покупателя</h3>
+    <ul type="circle">
+
+        <li>
+            <p>
+                <label for="name">Имя: </label>
+                <input name="name" id="name" placeholder="Петр">
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label for="surname">Фамилия: </label>
+                <input name="surname" id="surname" placeholder="Петров">
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label for="age">Возраст: </label>
+                <input type="number" name="age" id="age" value="0">
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label for="phone">Номер телефона: </label>
+                <input type="tel" name="phone" id="phone" value="+7" maxlength="12" required>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label>Хотите ли Вы получать электронную рассылку?
+                    <br><input type="radio" name="notify" id="yes" value="yes" checked>
+                    <label for="yes">Да</label>
+
+                    <br><input type="radio" name="notify" id="no" value="no">
+                    <label for="no">Нет</label>
+                </label>
+            </p>
+        </li>
+
+        <li>
+            <p>Предпочитаемый способ взаимодействия:
+            <br><input type="radio" id="ContactChoice1" name="contact" value="email" checked/>
+            <label for="ContactChoice1">Электронная почта</label>
+            <br><input type="radio" id="ContactChoice2" name="contact" value="phone"/>
+            <label for="ContactChoice2">Телефон</label>
+            <br><input type="radio" id="ContactChoice3" name="contact" value="messenger"/>
+            <label for="ContactChoice3">Мессенджер</label>
+            <br><input type="radio" id="ContactChoice4" name="contact" value="socials"/>
+            <label for="ContactChoice4">Социальные сети</label>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label for="address">Место проживания: </label>
+                <input name="address" id="address" size="25">
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label for="date">Дата отправки данных: </label>
+                <input type="date" name="date" id="date">
+            </p>
+        </li>
+
+        <li>
+            <p>
+            <label>Предпочитаемый способ оплаты:
+                <select name="pay" id="pay">
+                    <option>наличными при получении</option>
+                    <option>банковской картой при получении</option>
+                    <option>банковской картой онлайн</option>
+                </select>
+            </label>
+        </p>
+        </li>
+
+        <li>
+            <p>
+                <label>Любимые бренды и иные предпочтения: <br><textarea></textarea></label>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <label>Откуда Вы знаете про наш магазин?
+                    <br><input type="checkbox" id="way1" name="found_out_by" value="friends" checked>
+                    <label for="way1">По рекомендации знакомых</label>
+                    <br><input type="checkbox" id="way2" name="found_out_by" value="billboard">
+                    <label for="way2">Рекламный щит на улице</label>
+                    <br><input type="checkbox" id="way3" name="found_out_by" value="TV">
+                    <label for="way3">Телевидение</label>
+                    <br><input type="checkbox" id="way4" name="found_out_by" value="online">
+                    <label for="way4">Интернет</label>
+                    <br><input type="checkbox" id="way5" name="found_out_by" value="flyer">
+                    <label for="way5">Флаер</label>
+                </label>
+            </p>
+        </li>
+
+    </ul>
+
+    <p align="center"><input type="submit" value="Отправить"></p>
+</form>
+</body>
+</html>
