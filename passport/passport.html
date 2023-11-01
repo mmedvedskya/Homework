@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+</head>
+<body>
+<table width="450px" background="passport_bg.png">
+
+    <tr>
+        <td height="85" valign="bottom" align="center" colspan="5">ГУ МВД РОССИИ ПО МОСКОВСКОЙ</td>
+    </tr>
+    <tr>
+        <td height="40" colspan="5" align="center" valign="top">ОБЛАСТИ</td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" colspan="4">20.08.2018</td>
+        <td width="190" height="75" valign="top" align="left">404-404</td>
+    </tr>
+    <tr>
+        <td height="108"></td>
+        <td colspan="2"></td>
+        <td colspan="2" valign="top" align="center"><img src="signature.png" width="40"></td>
+    </tr>
+    <tr>
+        <td colspan=4></td>
+        <td height=50 align="left"><p>МЕДВЕДСКАЯ</p></td>
+    </tr>
+    <tr>
+        <td rowspan="4" width="20"></td>
+        <td rowspan="3" width="120" align="top"><img src="photo.jpg" height="135" width="120"></td>
+        <td colspan=3 height="23" valign="bottom" align="center"><div class ="box">МАРИЯ</div></td>
+    </tr>
+    <tr>
+        <td height="43" valign="bottom" align="center">ЖЕН.</td>
+        <td width="30"></td>
+        <td>
+            <div class ="box">ОЛЕГОВНА</div>
+            <div class ="box">23.03.2004</div>
+        </td>
+    </tr>
+    <tr>
+        <td align=center valign="top" colspan="3">ГОР. МОСКВА</td>
+    </tr>
+    <tr>
+        <td colspan="4"><h3 id="for_click">Изменить по клику</h3></td>
+    </tr>
+</table>
+<script>
+    let check = true;
+    const node_for_click = document.getElementById("for_click")
+    function find_edit(){
+    if(check){
+        document.getElementsByTagName('p')[0].innerText = 'MEDVEDSKAYA'
+        document.getElementsByClassName("box")[0].innerHTML='MARIA'
+        document.getElementsByClassName("box")[1].innerHTML='OLEGOVNA'
+        check=false;
+        }
+    else{
+        document.getElementsByTagName('p')[0].innerText = 'МЕДВЕДСКАЯ'
+        document.getElementsByClassName("box")[0].innerHTML='МАРИЯ'
+        document.getElementsByClassName("box")[1].innerHTML='ОЛЕГОВНА'
+        check=true;
+        }
+    }
+    node_for_click.addEventListener("click",find_edit)
+
+</script>
+</body>
+</html>
