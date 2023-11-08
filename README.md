@@ -1,6 +1,6 @@
 Homework for Web-technologies
 
-[КР](https://mmedvedskya.github.io/Homework)
+### https://mmedvedskya.github.io/Homework
 
 [Сайт для кр](https://mmedvedskya.github.io/Homework/final/index.html)
 
